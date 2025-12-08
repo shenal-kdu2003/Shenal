@@ -203,7 +203,6 @@ li a:hover {
     }
 }
 
-
 /*home section*/
 .home{
     padding: 120px 50px 80px;
@@ -606,7 +605,6 @@ li a:hover {
 }
 
 /* Skills Section */
-/* Skills Section */
 .skills {
     padding: 100px 150px;
     color: white;
@@ -698,9 +696,9 @@ li a:hover {
     background-color: orange;
     border-radius: 10px;
     animation: fillProgress 2s ease-in-out forwards;
-    transform: translateZ(0); /* Hardware acceleration */
+    transform: translateZ(0); 
     backface-visibility: hidden;
-    will-change: width; /* Optimization */
+    will-change: width; 
 }
 
 .progress-line.html span { width: 90%; }
@@ -840,8 +838,7 @@ li a:hover {
         opacity: 1;
     }
 }
-
-/* FIX FOR MOBILE PROGRESS BARS */
+/*Responsive skills section*/
 @media screen and (max-width: 820px) {
     .skills-container {
         flex-direction: column;
@@ -885,7 +882,6 @@ li a:hover {
         box-shadow: 0 0 10px rgba(255, 140, 0, 0.7);
     }
     
-    /* Force specific widths for each skill on mobile */
     .progress-line.html span { width: 90% !important; animation-delay: 0.2s; }
     .progress-line.css span { width: 80% !important; animation-delay: 0.4s; }
     .progress-line.javascript span { width: 70% !important; animation-delay: 0.6s; }
@@ -919,7 +915,7 @@ li a:hover {
         font-size: 14px; 
     }
     
-    /* Responsive for percentages */
+/* Responsive for percentages */
     .technical_bars .bar::after {
         right: -35px !important;
         font-size: 12px !important;
@@ -927,9 +923,7 @@ li a:hover {
     }
 }
 
-
-
-    /*Services Section*/
+/*Services Section*/
 #service {
     padding: 80px 50px;
     scroll-margin-top: 80px;
@@ -1366,6 +1360,7 @@ div.work{
     }
 }
     
+
 
 
 
