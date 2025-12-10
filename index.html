@@ -296,27 +296,48 @@
     </div>
   </section>
 
-  <section id="contact">
+ <section id="contact">
     <div class="form">
-      <h1>Contact <span> Me</span></h1>
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="1d3bda9e-16dd-44bc-b2b0-592700f66535">
-        <input type="text" name="name" placeholder="Enter Your Name" required=""><br>
-        <input type="email" name="email" placeholder="Enter Your email" required=""><br>
-        <input type="number" name="mno" placeholder="Enter Your Phone No." required=""><br>
-        <textarea name="msg" id="msg" rows="6" cols="20" placeholder="Enter your Message"></textarea><br>
-        <button class="form_btn">Submit</button>
-      </form>
+        <h1>Contact <span>Me</span></h1>
+        <form id="contactForm" method="POST">
+            <input type="hidden" name="access_key" value="1d3bda9e-16dd-44bc-b2b0-592700f66535">
+            <input type="hidden" name="subject" value="New Contact Form Submission">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+            <input type="tel" name="phone" placeholder="Enter Your Phone Number" required>
+            <textarea name="message" rows="6" placeholder="Enter your Message" required></textarea>
+            
+            <div class="loading-spinner" id="loadingSpinner">
+                <div class="spinner"></div>
+                <p style="color: orange; margin-top: 10px;">Sending your message...</p>
+            </div>
+            
+            <button type="submit" class="form_btn">Send Message</button>
+        </form>
     </div>
-  </section>
+</section>
+  
+
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+        <div class="popup-icon" id="popupIcon"></div>
+        <h2 id="popupTitle">Success!</h2>
+        <p id="popupMessage">Your message has been sent successfully!</p>
+        <button class="popup-close-btn" id="popupCloseBtn">OK</button>
+    </div>
+</div>
 
     <div class="footer">
     <p><i class="fa-solid fa-copyright"></i>Chamidu shenal || All Rights Reserved...</p>
     </div>
-
+    <script src="script.js"></script>
+      
 </body>
 
 
 </html>
+
 
 
